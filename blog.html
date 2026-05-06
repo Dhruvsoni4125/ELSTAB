@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | ELSTAB POWER PRODUCT</title>
+    <meta name="description" content="Read the latest news and insights on power conditioning equipment, voltage stabilizers, and transformers.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .blog-card {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        .blog-img {
+            height: 220px;
+            overflow: hidden;
+        }
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .blog-card:hover .blog-img img {
+            transform: scale(1.05);
+        }
+        .blog-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .blog-meta {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .blog-meta i {
+            color: var(--accent-red);
+            margin-right: 5px;
+        }
+        .blog-title {
+            font-size: 1.4rem;
+            color: var(--dark-charcoal);
+            margin-bottom: 15px;
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.3;
+        }
+        .blog-excerpt {
+            color: var(--gray);
+            margin-bottom: 20px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-red);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+        .read-more:hover {
+            color: var(--dark-charcoal);
+            gap: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpeg" alt="ELSTAB Logo" onerror="this.src='https://via.placeholder.com/150x50?text=ELSTAB';">
+                <span>ELSTAB</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="products.html">Products</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="index.html#certifications">Quality</a>
+                <a href="index.html#contact" class="btn-primary-sm">Contact Us</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="padding: 120px 0 60px; background-color: var(--dark-charcoal); text-align: center;">
+        <div class="container">
+            <h1 style="color: var(--white); font-family: 'Outfit', sans-serif; font-size: 3rem; margin-bottom: 15px;">Insights & Articles</h1>
+            <p style="color: var(--gray); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Stay updated with the latest trends, maintenance tips, and industry news related to power conditioning.</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog section-padding bg-light">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <!-- Blog Post 1 -->
+                <div class="blog-card slide-up">
+                    <div class="blog-img">
+                        <img src="assets/images/digital_servo.jpeg" alt="Servo Stabilizer" onerror="this.src='https://via.placeholder.com/600x400?text=Servo+Stabilizer';">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> May 2, 2026</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h3 class="blog-title">Why Your Factory Needs a Digital Servo Stabilizer</h3>
+                        <p class="blog-excerpt">Voltage fluctuations can cause severe damage to expensive CNC machines and industrial equipment. Discover how a digital servo stabilizer acts as a reliable shield for your investments.</p>
+                        <div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card slide-up delay-1">
+                    <div class="blog-img">
+                        <img src="Images/12.png" alt="Isolation Transformer" onerror="this.src='https://via.placeholder.com/600x400?text=Isolation+Transformer';">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> April 15, 2026</span>
+                            <span><i class="fas fa-user"></i> Tech Team</span>
+                        </div>
+                        <h3 class="blog-title">Understanding the Role of Isolation Transformers</h3>
+                        <p class="blog-excerpt">What exactly is an isolation transformer and why is it crucial for medical facilities and data centers? We break down the technicalities and explain the life-saving benefits.</p>
+                        <div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card slide-up delay-2">
+                    <div class="blog-img">
+                        <img src="assets/images/ups.jpeg" alt="Online UPS" onerror="this.src='https://via.placeholder.com/600x400?text=Online+UPS';">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> March 28, 2026</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h3 class="blog-title">Maintenance Tips for Your Online UPS System</h3>
+                        <p class="blog-excerpt">An Uninterruptible Power Supply is your last line of defense against data loss during a blackout. Learn the essential maintenance routines to keep your UPS performing at 100%.</p>
+                        <div>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col slide-up">
+                    <a href="index.html" class="footer-logo">
+                        <span>ELSTAB</span>
+                    </a>
+                    <p>Years of experience in creating unparalleled power conditioning products. Our quality is on par with market standards.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col slide-up delay-1">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">Company Profile</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#certifications">Certifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col slide-up delay-2">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <a href="tel:+919811399341">+91-9811399341</a><br>
+                                <a href="tel:+919711399341">+91-9711399341</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@elstab.net">info@elstab.net</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="http://www.elstab.com" target="_blank">www.elstab.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col slide-up delay-3">
+                    <h4>Office Address</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <address>
+                                Plot No. 3, Khasra No.12/6,<br>
+                                Street No.-13, Near Radha Krishna Temple,<br>
+                                Samaypur, Delhi-110042
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ELSTAB POWER PRODUCT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
